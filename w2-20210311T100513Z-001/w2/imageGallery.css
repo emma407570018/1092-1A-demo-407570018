@@ -1,0 +1,24 @@
+#line3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#line3 img {
+  width: 30%;
+  margin: 1.6%;
+}
+#line4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#line4 img {
+  width: 23%;
+  margin: 1%;
+}
+#lune5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#line5 img {
+  width: 17%;
+  margin: 1%;
+}
