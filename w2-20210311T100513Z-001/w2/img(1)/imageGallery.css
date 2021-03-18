@@ -22,3 +22,13 @@
   width: 17.8%;
   margin: 1%;
 }
+p {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid #8c7ce6;
+  width: 30%;
+  padding-bottom: 12px;
+  margin: 1.6%;
+}
