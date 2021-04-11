@@ -44,6 +44,11 @@ body {
 .main{
   display: flex;
 }
+
+.aside{
+  display: flex;
+}
+
 #sidebar {
   background: rgb(225, 152, 247);
   grid-area: sidebar;
