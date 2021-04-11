@@ -24,24 +24,23 @@ body {
   margin: 1.5rem auto;
 }
 
-nav{
+#logo{
   background:  rgb(247, 163, 142);
-  grid-area: nav;
+  grid-area: logo;
   border: 5px solid #3cbbc4;
   text-align: center;
 }
 
-main{
+#header{
   background:  rgb(238, 197, 169);
-  grid-area: main;
+  grid-area: header;
   border: 5px solid #3cbbc4;
   text-align: center;
 }
 
 #sidebar {
-  height: 100%;
   background: rgb(225, 152, 247);
-  grid-area: article;
+  grid-area: sidebar;
   border: 5px solid #204922;
   text-align: center;
 }
@@ -52,8 +51,8 @@ main{
   margin: 1rem;
   height: 13rem center;
 }
-.aside {
-  height: 100%;
+
+#aside {
   background: rgb(238, 226, 65);
   grid-area: aside;
   border: 5px solid #204922;
@@ -94,7 +93,7 @@ aside li {
 }
 
 aside img {
-  width: 100%;
+  width: 50%;
   height: 60%;
 }
 
