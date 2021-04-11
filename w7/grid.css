@@ -24,6 +24,9 @@ body {
   margin: 1.5rem auto;
 }
 
+#heading{
+  display: flex;
+}
 #logo{
   background:  rgb(247, 163, 142);
   grid-area: logo;
@@ -68,7 +71,7 @@ body {
 }
 
 #display {
-  height: 55%;
+  height: 60%;
   width: 70%;
   background: lemonchiffon;
   margin: 0.5rem auto;
@@ -103,7 +106,7 @@ footer {
   grid-area: footer;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:550px){
   .container{
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 1fr 1.5fr 0.3fr;
