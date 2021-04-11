@@ -1,6 +1,6 @@
 * {
-  margin: 1rem auto;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 2fr 0.8fr;
+  grid-template-rows: 0.2fr 2fr 0.8fr 0.2fr;
   grid-template-areas:
     'logo header header header'
     'sidebar aside aside aside'
@@ -27,6 +27,7 @@ body {
 #heading{
   display: flex;
   width: 90%;
+  height: 100%;
 }
 #logo{
   background:  rgb(247, 163, 142);
