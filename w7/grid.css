@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: rgba(157, 233, 221, 0.8);
+  background-color: rgba(174, 235, 226, 0.8);
 }
 
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 2fr 0.8fr 0.2fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
   grid-template-areas:
     'logo header header header'
-    'sidebar aside aside aside'
+    'article aside aside aside'
     'footer footer footer footer';
   font-size: 1rem;
   font-weight: 600;
@@ -24,34 +24,27 @@ body {
   margin: 1.5rem auto;
 }
 
-.heading{
-  display: flex;
-}
-#logo{
-  background:  rgb(247, 163, 142);
+#logo {
+  height: 100%;
+  border: 5px solid #3cbbc4;
+  background: rgb(247, 170, 151);
   grid-area: logo;
-  border: 5px solid #3cbbc4;
   text-align: center;
 }
 
-#header{
-  background:  rgb(238, 197, 169);
+#header {
+  height: 100%;
+  border: 5px solid #3cbbc4;
+  border-left: 0px;
+  background: rgb(238, 197, 169);
   grid-area: header;
-  border: 5px solid #3cbbc4;
   text-align: center;
 }
 
-.main{
-  display: flex;
-}
-
-.aside{
-  display: flex;
-}
-
-#sidebar {
+.article {
+  height: 100%;
   background: rgb(225, 152, 247);
-  grid-area: sidebar;
+  grid-area: article;
   border: 5px solid #204922;
   text-align: center;
 }
@@ -62,8 +55,8 @@ body {
   margin: 1rem;
   height: 13rem center;
 }
-
-#aside {
+.aside {
+  height: 100%;
   background: rgb(238, 226, 65);
   grid-area: aside;
   border: 5px solid #204922;
@@ -79,7 +72,7 @@ body {
 }
 
 #display {
-  height: 60%;
+  height: 55%;
   width: 70%;
   background: lemonchiffon;
   margin: 0.5rem auto;
@@ -104,7 +97,7 @@ aside li {
 }
 
 aside img {
-  width: 50%;
+  width: 100%;
   height: 60%;
 }
 
@@ -113,4 +106,3 @@ footer {
   background: rgb(163, 82, 82);
   grid-area: footer;
 }
-
