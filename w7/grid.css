@@ -24,20 +24,17 @@ body {
   margin: 1.5rem auto;
 }
 
-#logo {
-  height: 100%;
+nav{
+  background:  rgb(247, 163, 142);
+  grid-area: nav;
   border: 5px solid #3cbbc4;
-  background: rgb(247, 163, 142);
-  grid-area: logo;
   text-align: center;
 }
 
-#header {
-  height: 100%;
+main{
+  background:  rgb(238, 197, 169);
+  grid-area: main;
   border: 5px solid #3cbbc4;
-  border-left: 0px;
-  background: rgb(238, 197, 169);
-  grid-area: header;
   text-align: center;
 }
 
