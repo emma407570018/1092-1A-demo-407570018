@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(157, 233, 221, 0.8);
+  background-color: rgba(174, 235, 226, 0.8);
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
 #logo {
   height: 100%;
   border: 5px solid #3cbbc4;
-  background: rgb(247, 163, 142);
+  background: rgb(247, 170, 151);
   grid-area: logo;
   text-align: center;
 }
