@@ -26,7 +26,7 @@ function changeColor(index) {
 }
 
 function changePhoto(index) {
-  const photo = document.querySelector(`.video-responsive`);
+  const photo = document.querySelector(`#player`);
   console.log(`photo`,photo);
   switch (index) {
     case 1:
