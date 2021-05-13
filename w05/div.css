@@ -24,25 +24,53 @@ body {
   background-color: rgb(238, 226, 119);
   text-align: center;
   font-size: large;
+  display: flexbox;
 }
-
-#heading ul {
+.link {
   display: flex;
+  justify-content: space-between;
+}
+#link ul {
+  display: flex;
+  text-align: left;
+  justify-content: left;
   list-style: none;
   margin-top: 1.5rem;
   padding-left: 2rem;
 }
 
-#heading li {
+#link li {
   padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
-#heading li a {
+#link li a {
   background-color: rgb(243, 165, 165);
   padding: 0.5rem;
 }
 
-#heading li a:hover {
+#link li a:hover {
+  background-color: rgb(240, 98, 98);
+}
+
+#img ul {
+  display: flex;
+  text-align: right;
+  justify-content: right;
+  list-style: none;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+}
+
+#img li {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+#img li a {
+  background-color: rgb(243, 165, 165);
+  padding: 0.5rem;
+}
+
+#img li a:hover {
   background-color: rgb(240, 98, 98);
 }
 
