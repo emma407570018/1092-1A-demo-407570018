@@ -8,7 +8,7 @@
 body {
   background-color: white;
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
@@ -24,7 +24,7 @@ ul {
 
 .container {
   width: 90%;
-  max-width: 110rem;
+  max-width: 115rem;
   margin: auto;
 }
 
@@ -70,6 +70,34 @@ ul {
 
 .main-nav ul li a:hover {
   border-bottom: 2px solid #262626;
+}
+
+.main-nav .menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  z-index: 2;
+  display: none;
+}
+
+.main-nav .btn {
+  margin-top: 1rem;
+  background: #262626;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.main-nav .dark {
+  color: #fff;
+}
+
+.main-nav .dark .btn {
+  background: #fff;
+  color: black;
 }
 
 /* SHOWCASE*/
@@ -173,84 +201,127 @@ ul {
 /* Carbon */
 .carbon-dark {
   width: 100%;
-  height: 350px;
+  height: 35rem;
   background: url("./ms_img/img/carbon.jpg") no-repeat center center/cover;
-  margin-bottom: 2rem;
 }
 
 .carbon-dark .content {
-  width: 40%;
-  padding: 3.5rem 0 0 3rem;
-  color: white;
+  width: 55%;
+  padding: 10rem 0 0 3rem;
 }
 
 .carbon-dark .content h2 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .carbon-dark .content p {
-  margin: 0.5rem 0 0.7rem;
-  font-size: 0.7rem;
-}
-
-.carbon-dark .btn {
-  margin-top: 0.8rem;
-  background: #262626;
-  color: white;
-  padding: 1rem 1rem;
-  cursor: pointer;
-  display: inline-block;
+  margin: 1rem 0 1.2rem;
   font-size: 1rem;
 }
 
 /* Follow */
 .follow {
-  width: 100%;
-  height: 350px;
-  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 3rem 0 3rem;
 }
 
-.follow p {
-  margin: 0.5rem 0 0.5rem;
-  font-size: 1rem;
-  font-weight: bold;
+.follow * {
+  margin-right: 1rem;
 }
 
 /* Links*/
 .links {
+  background: white;
+  color: #616161;
+  font-size: 1.2rem;
+  padding: 3.5rem 0;
+}
+
+.links .links-inner {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  margin-bottom: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.links ul {
-  width: 100%;
-  margin-bottom: 1rem;
+.links li {
+  line-height: 2.8;
 }
 
-.links h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 1.2rem;
+  padding: 2rem 0;
 }
 
-.links a {
-  display: inline-block;
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
-  padding-top: 1rem;
-}
-
-@media (max-width: 750px) {
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn :hover
+.main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f2f2f2;
+    -webkit-transform: translateX(-50rem);
+            transform: translateX(-50rem);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    opacity: 0.8;
+    padding: 2rem;
+  }
+  .menu-btn :hover
+.main-nav ul.main-menu.show {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  .menu-btn :hover
+.main-nav ul.main-menu li {
+    padding: 0.8rem;
+    border-bottom: #ccc solid 1px;
+    font-size: 1.2rem;
+  }
+  .menu-btn :hover
+.main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+  .menu-btn :hover
+.main-nav ul.right-menu {
+    margin-right: 3.5rem;
+  }
   .btn {
     font-size: 1rem;
     padding: 0.7rem 0.9rem;
   }
   .home-cards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
   }
   .xbox .content {
     width: 40%;
@@ -280,6 +351,16 @@ ul {
   .xbox .content h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+  }
+  .carbon .content {
+    width: 70%;
+  }
+  .carbon .content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .carbon .content p {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
